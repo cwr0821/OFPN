@@ -17,7 +17,7 @@ model = dict(
             type='Pretrained', checkpoint='open-mmlab://resnext50_32x4d')),
     neck=[
         dict(
-            type='CA_PAFPN',
+            type='aspp_PAFPN',
             in_channels=[256, 512, 1024, 2048],
             out_channels=256,
             num_outs=5
